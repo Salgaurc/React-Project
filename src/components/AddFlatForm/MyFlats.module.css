@@ -132,6 +132,7 @@
 
 @media (max-width: 500px) {
     .mainContainer {
+    height: calc(100vh - 5rem);
     grid-template-columns: repeat(1, 1fr);
     }
     .addApartmentForm {
