@@ -97,6 +97,9 @@
   
   /* Mobile Styles */
   @media (max-width: 640px) {
+    .container {
+      height: calc(100vh - 5rem);
+    }
     .navLinks {
         gap: 1rem;
     }
@@ -142,6 +145,13 @@
     }
   }
   @media (max-width: 440px) {
+    .navbar{
+      height: 3rem;
+    }
+    .container {
+      height: 3rem;
+    }
+
     .hamburger {
       display: flex;
     }
