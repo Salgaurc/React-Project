@@ -98,7 +98,7 @@
   /* Mobile Styles */
   @media (max-width: 640px) {
     .container {
-      height: calc(100vh - 5rem);
+      height: 5rem;
     }
     .navLinks {
         gap: 1rem;
