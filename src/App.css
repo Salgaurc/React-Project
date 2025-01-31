@@ -83,3 +83,18 @@
 .Toastify__close-button:hover {
   color: #f8d7da; 
 }
+
+@media (max-width: 440px) {
+  .app-container{
+    height: 100vh;  
+    min-height: 100%;
+    width: 100vw;
+    /* background-image: url('./assets/bck-img.png'); */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+  }
+}
