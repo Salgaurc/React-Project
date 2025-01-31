@@ -1,0 +1,112 @@
+.app-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.mainContainer {
+    height: calc(100vh - 5rem);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;
+}
+
+.title {
+    font-size: 2.4rem;
+    padding: 3rem;
+}
+
+.form {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center; 
+    background-color: #f0f8ff;
+    height: 50rem; 
+    width: 40rem;
+    border-radius: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    gap: 1.5rem;
+}
+
+.inputGroup {
+    width: 30rem;
+    border: 1px solid #ccc;
+    border-radius: 0.3rem;
+    outline: none;
+    transition: border-color 0.3s ease;
+    font-size: 1.2rem;
+    padding: 0.5em;
+    margin-bottom: 1rem;
+}
+
+.buttonsContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 90%;
+}
+
+.updateButton{
+    width: 45%;
+    margin-top: 1rem;
+    font-size: 1em;
+    padding: 1rem 1.5em;
+    background-color: #007bff; /* Primary blue color */
+    color: white;
+    border: none;
+    border-radius: 0.3rem;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.updateButton:hover {
+    background-color: #0056b3;
+}
+
+.deleteButton {
+    width: 45%;
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 0.3 0.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: 0.3s ease;
+}
+
+.deleteButton:hover {
+    background-color: #e60000;
+}
+
+.modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20rem;
+    width: 30rem;
+    background-color: #f0f8ff;
+    border-radius: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 9999;
+}
+
+.modalCancelBtn {
+    background-color: #ff4d4d;
+}
+
+.modalCancelBtn:hover {
+    background-color: #e60000;
+}
+
+@media (max-width: 420px) {
+
+}

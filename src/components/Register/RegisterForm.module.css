@@ -1,0 +1,82 @@
+html, body {
+    height: 100%; 
+    width: 100%;
+    margin: 0; 
+}
+
+body {
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+}
+
+.mainContainer {
+    width: 100%;
+    height: calc(100vh - 6rem);
+    min-height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+.registerForm {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center; 
+    background-color: #f0f8ff;
+    height: 50rem; 
+    width: 40rem;
+    border-radius: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.formTitle {
+    font-size: 4rem;
+    font-weight: bold;
+    color: #4f4f4f;
+    padding: 0.8rem;
+}
+
+.inputGroup {
+    width: 30rem;
+    border: 1px solid #ccc;
+    border-radius: 0.3rem;
+    outline: none;
+    transition: border-color 0.3s ease;
+    font-size: 1.2rem;
+    padding: 0.5em;
+    margin-bottom: 1rem;
+}
+
+input {
+    width: 100%;
+}
+
+input:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+
+label {
+    margin-bottom: 0.5rem; /* Space between label and input */
+    display: block; /* Ensures label is above the input */
+}
+button {
+    width: 100%;
+    margin-top: 1rem;
+    font-size: 1em;
+    padding: 1rem 1.5em;
+    background-color: #007bff; 
+    color: white;
+    border: none;
+    border-radius: 0.3rem;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3; 
+}

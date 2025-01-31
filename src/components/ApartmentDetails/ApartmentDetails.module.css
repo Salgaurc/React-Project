@@ -1,0 +1,110 @@
+.mainContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+.mainContainer h2 {
+    margin-bottom: 5px;
+    font-size: 1.8rem;
+    color: #ddd;
+}
+
+.apartmentDetails {
+    width: 100%;
+    max-width: 600px;
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #fff;
+    box-sizing: border-box;
+    background-color: rgba(30, 30, 30, 0.1);
+    backdrop-filter: blur(10px);
+}
+
+.apartmentDescription {
+    margin-bottom: 0.5rem;
+    color: #f9f9f9;
+    font-size: 1.3rem;
+}
+
+.image {
+    width: 100%;
+    height: 30rem;
+    margin-bottom: 15px;
+    border-radius: 8px;
+}
+
+.messageForm {
+    width: 100%;
+    max-width: 600px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-sizing: border-box;
+    background-color: rgba(30, 30, 30, 0.1);
+    backdrop-filter: blur(10px);
+}
+
+.textarea {
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    resize: none; 
+}
+
+.sendButton {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.sendButton:hover {
+    background-color: #0056b3;
+}
+
+.loading, .notFound {
+    font-size: 18px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.messagesSection {
+    width: 100%;
+    max-width: 600px;
+    margin-top: 20px;
+    height: 20rem;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-sizing: border-box;
+    background-color: rgba(30, 30, 30, 0.1);
+    backdrop-filter: blur(10px);
+    overflow-y: auto;
+}
+
+.messageItem {
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+}
+
+.messageItem p {
+    color: #ddd;
+    font-size: 1.5rem;
+}
+
+.messageTimestamp {
+    margin-top: 5px;
+}

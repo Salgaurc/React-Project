@@ -1,0 +1,302 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%; 
+  overflow-x: hidden; 
+}
+
+.mainContainer {
+  width: 100%;
+  height: 100vh; 
+  display: flex;
+  flex-direction: column; 
+  justify-content: center;
+  align-items: center;
+}
+
+.filtersMainContainer {
+  background-color: rgba(30, 30, 30, 0.1);
+  backdrop-filter: blur(10px);
+  height: 4.5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+}
+
+.filtersSubContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0 1rem;
+  gap: 1rem;
+}
+
+.filters {
+  height: 2rem;
+  width: 10%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.filters input {
+  width: 100%;
+  height: 2rem;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.checkboxContainer {
+  display: flex; 
+  flex-direction: row; 
+  align-items: center; 
+  justify-content: flex-start; 
+  gap: 1rem; 
+}
+
+.checkboxContainer label {
+  display: flex; 
+  align-items: center; 
+  gap: 0.5rem; 
+}
+
+input[type="checkbox"] {
+  outline: none; 
+  box-shadow: none; 
+  border: none; 
+}
+
+.resetBtnContainer {
+  gap: 0.5rem;
+}
+
+.resetFilter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ff4d4d;
+  width: 0.05rem;
+  height: 0.5rem;
+  margin: 0;
+  border-radius: 5px;
+}
+
+.resetFilter:hover {
+  background-color: #e60000;
+}
+
+.cardContainer {
+  display: grid;
+  height: 100%; 
+  grid-template-rows: auto 1fr; 
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1.5rem;
+  justify-content: center;
+  align-items: start;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 2rem; 
+}
+
+.card {
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 1.2rem;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 25rem;
+  height: 30rem; 
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.image {
+  width: 100%; 
+  height: 12rem;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.titleDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cardDescription {
+  font-size: 1.2rem;
+}
+
+/* Additional Styles for Buttons */
+.buttonsContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.favoritesButton {
+  background-color: transparent;
+  color: black;
+  border: 1px solid black;
+  border-radius: 8rem; 
+  width: 1rem;
+  height: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.8rem;
+}
+
+.favoritesButton:hover {
+  background-color: #ff4d4d;
+  color: white;
+}
+
+.favoritesButton.activeFavorite {
+  background-color: #ff4d4d;
+  color: white;
+}
+
+.deleteButton {
+  width: 4.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  font-size: 0.8rem;
+  cursor: pointer;
+  border-radius: 4px;
+  margin-top: 0.5rem;
+  transition: background-color 0.3s ease;
+}
+
+.deleteButton:hover {
+  background-color: grey;
+}
+
+  @media (max-width: 660px) {
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%; 
+      overflow-x: hidden; 
+    }
+  
+    .mainContainer {
+      width: 100%;
+      height: 100vh; 
+      display: flex;
+      flex-direction: column; 
+      justify-content: center;
+      align-items: center;
+      padding: 0 1rem; 
+    }
+
+    .filtersSubContainer {
+      gap: 0.2rem;
+    }
+
+    .resetFilter {
+      width: 0.02rem;
+    }
+  
+    .card {
+      background-color: #ffffff;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      padding: 1.2rem;
+      text-align: center;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      width: 20rem; 
+      max-width: 28rem; 
+      margin: 0 auto; 
+    }
+  
+    .cardTitle {
+      font-size: 1.2rem;
+      font-weight: bold;
+      color: #007bff;
+      margin-bottom: 1rem;
+    }
+  
+    .cardDescription {
+      font-size: 0.8rem;
+      color: #555;
+      margin-bottom: 0.5rem;
+    }
+  
+    .image {
+      width: 100%;
+      height: 10rem;
+      object-fit: cover;
+      border-radius: 8px;
+      margin-bottom: 1rem;
+    }
+  }
+
+  @media (max-width: 590px) {
+    .filtersSubContainer {
+      padding: 0;
+      gap: 0.1rem;
+    }
+
+    .filters input {
+      font-size: 0.8rem;
+      width: 5rem;
+    }
+  }
+
+  @media (max-width: 575px) {
+    .mainContainer {
+      padding: 0;
+    }
+    .filters input {
+      font-size: 0.6rem;
+      width: 5rem;
+    }
+
+    .cardContainer {
+    grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  @media (max-width: 490px) {
+    .mainContainer {
+      padding: 0;
+    }
+    .filters input {
+      font-size: 0.5rem;
+      width: 3.5rem;
+    }
+  }
+  @media (max-width: 440px) {
+    .filters input {
+      font-size: 0.6rem;
+      width: 3.5rem;
+    }
+    .cardContainer {
+    grid-template-columns: repeat(1, 1fr);
+    }
+  }
+
+
+  
+  
+
