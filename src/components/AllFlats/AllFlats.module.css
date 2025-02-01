@@ -7,11 +7,12 @@ html, body {
 
 .mainContainer {
   width: 100%;
-  height: calc(100vh - 5rem);
+  height: calc(100vh - 9.5rem);
   display: flex;
   flex-direction: column; 
   justify-content: center;
   align-items: center;
+  
 }
 
 .filtersMainContainer {
@@ -287,6 +288,10 @@ input[type="checkbox"] {
     }
   }
   @media (max-width: 440px) {
+    .cardContainer {
+      overflow-x: hidden;
+      overflow-y: auto;
+    }
     .filters input {
       font-size: 0.6rem;
       width: 3.5rem;
