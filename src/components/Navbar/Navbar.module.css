@@ -155,7 +155,7 @@
 @media screen and (max-width: 540px) {
   .container,
   .navbar {
-    height: 3rem;
+    height: auto; /* Allow height to adjust */
   }
 
   .logoContainer {
