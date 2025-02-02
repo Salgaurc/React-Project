@@ -1,8 +1,9 @@
 .mainContainer {
+    height: calc(100vh - 4rem);
     padding: 20px;
-    max-width: 800px;
     margin: 0 auto;
     text-align: center;
+    overflow-x: auto;
   }
   
   .title {

@@ -4,20 +4,6 @@
   box-sizing: border-box;
 }
 
-.app-container{
-  height: 100vh;  
-  min-height: 100%;
-  width: 100vw;
-  /* background-image: url('./assets/bck-img.png'); */
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  display: flex;
-  flex-direction: column;
-}
-
-
 .Toastify__toast {
   background-color: #4CAF50; 
   color: white; 
