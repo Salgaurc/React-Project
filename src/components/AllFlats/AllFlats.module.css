@@ -56,20 +56,22 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 
 .checkboxContainer {
+  width: 9rem;
   display: flex; 
-  flex-direction: row; 
-  align-items: center; 
-  justify-content: flex-start; 
-  gap: 1rem; 
-}
-
-.checkboxContainer label {
-  display: flex; 
+  flex-direction: row;
+  justify-content: space-evenly;
   align-items: center; 
   gap: 0.5rem; 
 }
 
+.checkboxContainer label {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem; /* Adjust spacing between checkbox and text */
+}
+
 input[type="checkbox"] {
+  width: 1.5rem;
   outline: none; 
   box-shadow: none; 
   border: none; 
@@ -202,7 +204,7 @@ input[type="checkbox"] {
   
     .mainContainer {
       width: 100%;
-      height: calc(100vh - 5rem);
+      height: calc(100dvh - 5rem);
       display: flex;
       flex-direction: column; 
       justify-content: center;

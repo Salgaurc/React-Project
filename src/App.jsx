@@ -150,7 +150,7 @@ function AppContent() {
 function App() {
   return (
     <ToastProvider>
-    <div className="app-container">
+    
       <Router>
         <AppContent />
       </Router>
@@ -161,7 +161,7 @@ function App() {
       hideProgressBar={true}
       theme="colored"
        />
-    </div>
+    
     </ToastProvider>
   );
 }
