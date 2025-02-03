@@ -102,6 +102,21 @@ function AppContent() {
     return () => unsubscribe();
   }, [auth, notifyWelcome]);
 
+   // Fix for Safari toolbar hiding
+   useEffect(() => {
+    const setVH = () => {
+      document.documentElement.style.setProperty("--vh", `${window.innerHeight * 0.01}px`);
+    };
+
+    setVH();
+    window.addEventListener("resize", setVH);
+
+    // Scroll a bit to trigger Safari hiding toolbar
+    window.scrollTo(0, 1);
+
+    return () => window.removeEventListener("resize", setVH);
+  }, []);
+
   // Hide Navbar only on login and register pages
   const hideNavbar = !isLoggedIn && ["/login", "/register"].includes(location.pathname);
 
