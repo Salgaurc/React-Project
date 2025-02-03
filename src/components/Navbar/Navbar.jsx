@@ -70,6 +70,8 @@ const Navbar = ({ user, onLogout }) => {
               <li className={styles.greeting}>
                 <NavLink 
                   to="/profile-update"
+                  className={({ isActive }) => (isActive ? styles.activeLink : '')}
+                  onClick={() => setIsMenuOpen(false)}
                   >
                   Hello, {user.email}
                 </NavLink>
