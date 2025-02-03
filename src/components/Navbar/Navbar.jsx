@@ -25,7 +25,7 @@ const Navbar = ({ user, onLogout }) => {
       <nav className={styles.navbar}>
         {/* Logo */}
         <div className={styles.logoContainer}>
-          <img src="../../../public/logo.png" alt="logo" className={styles.logoImage} />
+          <img src="/logo.png" alt="logo" className={styles.logoImage} />
         </div>
 
         {/* Hamburger Icon */}
