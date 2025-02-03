@@ -35,6 +35,8 @@
 .logoImage {
   height: 4rem;
   width: 4rem;
+  object-fit: contain;
+  visibility: visible;
 }
 
 /* Navigation Links */
